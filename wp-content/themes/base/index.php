@@ -10,6 +10,7 @@
                         <h1><a href="<?php the_permalink();?>"><?php the_title();?></a></h1>
                         <?php
                         edit_post_link();
+                        the_post_thumbnail('small');//Get featured image
                         the_content();
                         //echo excerpt_baseexcerpt(50);
                         //the_excerpt();
